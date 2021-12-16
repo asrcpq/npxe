@@ -23,6 +23,7 @@ class MainWindow(QMainWindow):
 		self.browser.setUrl(QUrl(url))
 		self.setWindowTitle("npxe")
 		self.setCentralWidget(self.browser)
+		self.resize(640, 480)
 		self.showMaximized()
 	def closeEvent(self, e):
 		for item in self.browser.history().items():

@@ -18,7 +18,9 @@ Cons:
 
 todo:
 
-* click not work in some sites
+* distinguish open in new tab/window/current?
+
+* video play
 
 * right click to gesture
 
