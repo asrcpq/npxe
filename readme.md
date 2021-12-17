@@ -18,11 +18,11 @@ Cons:
 
 todo:
 
-* distinguish open in new tab/window/current?
-
-* video play
+* no sound with nixGL
 
 * right click to gesture
+
+* ctrl-click open in new window
 
 * tablet scroll
 
