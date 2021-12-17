@@ -7,7 +7,6 @@ python3.pkgs.buildPythonApplication rec {
 	src = ./.;
 	nativeBuildInputs = [ qt5.wrapQtAppsHook python3.pkgs.setuptools ];
 
-
 	propagatedBuildInputs = with python3.pkgs; [ pyqtwebengine ];
 
 	dontWrapQtApps = true;
