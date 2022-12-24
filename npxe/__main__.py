@@ -1,9 +1,9 @@
 import os
 import sys
-from PySide6.QtCore import Qt, QUrl
-from PySide6.QtWidgets import QMainWindow, QApplication
-from PySide6.QtWebEngineWidgets import QWebEngineView
-from PySide6.QtWebEngineCore import QWebEngineProfile, QWebEnginePage
+from PyQt6.QtCore import Qt, QUrl
+from PyQt6.QtWidgets import QMainWindow, QApplication
+from PyQt6.QtWebEngineWidgets import QWebEngineView
+from PyQt6.QtWebEngineCore import QWebEngineProfile, QWebEnginePage
 import atexit
 
 class NpxeView(QWebEngineView):
@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
 			sys.exit(0)
 		for item in self.browser.history().items():
 			self.hist_file.write("{} {} {}\n".format(
-				item.lastVisited().toString(Qt.ISODate),
+				item.lastVisited().toString(Qt.DateFormat.ISODate),
 				item.originalUrl().toString(),
 				item.title(),
 			))
@@ -45,7 +45,7 @@ def main():
 	if "://" not in url:
 		url = "https://" + url
 	window = MainWindow(url, hist_file)
-	app.exec_()
+	app.exec()
 	hist_file.close()
 
 if __name__ == '__main__':

@@ -1,5 +1,4 @@
 #!/bin/sh
 
 cd "$(dirname "$0")/.."
-. venv/bin/activate
 NPXE_HISTORY=./npxe_history.txt python3 npxe "$1"
