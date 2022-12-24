@@ -1,4 +1,2 @@
-/profile
 /venv
-*.egg-info
-__pycache__
+/data

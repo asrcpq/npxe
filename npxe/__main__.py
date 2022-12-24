@@ -1,8 +1,9 @@
 import os
 import sys
-from PyQt5.QtCore import Qt, QUrl
-from PyQt5.QtWidgets import QMainWindow, QApplication
-from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEngineProfile, QWebEnginePage
+from PySide6.QtCore import Qt, QUrl
+from PySide6.QtWidgets import QMainWindow, QApplication
+from PySide6.QtWebEngineWidgets import QWebEngineView
+from PySide6.QtWebEngineCore import QWebEngineProfile, QWebEnginePage
 import atexit
 
 class NpxeView(QWebEngineView):
