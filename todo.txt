@@ -1,0 +1,7 @@
+# main
+* dark
+* force open in browser
+
+# json
+* in page search
+* middle button scroll
