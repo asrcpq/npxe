@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd "$(dirname "$0")/.."
-NPXE_HISTORY=./npxe_history.txt python3 npxe "$1"
+NPXE_HISTORY=./data/npxe_history.txt python3 npxe "$1"
